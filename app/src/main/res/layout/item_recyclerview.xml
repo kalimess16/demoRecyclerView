@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_iron_man"
+        android:id="@+id/image_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"/>
+
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:gravity="bottom|right"
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:text="@string/iron_man"
+        android:textColor="@color/colorWhite"
+        tools:ignore="RtlHardcoded"
+        />
+</RelativeLayout>
