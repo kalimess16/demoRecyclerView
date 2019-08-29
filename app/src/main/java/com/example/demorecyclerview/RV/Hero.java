@@ -1,10 +1,12 @@
-package com.example.demorecyclerview;
+package com.example.demorecyclerview.RV;
+
+import android.graphics.Bitmap;
 
 public class Hero {
     private String mName;
-   private int mImage;
+   private Bitmap mImage;
 
-    public Hero(String name, int image) {
+    public Hero(String name, Bitmap image) {
         mName = name;
         mImage = image;
     }
@@ -17,11 +19,11 @@ public class Hero {
         mName = name;
     }
 
-    public int getImage() {
+    public Bitmap getImage() {
         return mImage;
     }
 
-    public void setImage(int image) {
+    public void setImage(Bitmap image) {
         mImage = image;
     }
 }

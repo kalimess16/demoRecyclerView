@@ -1,6 +1,5 @@
-package com.example.demorecyclerview;
+package com.example.demorecyclerview.RV;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import com.example.demorecyclerview.R;
 import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder>{
@@ -25,12 +25,19 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         return new  ViewHolder(view);
     }
 
+    public void updateData(ArrayList<Hero> listHero){
+        mListHero.clear();
+        mListHero.addAll(listHero);
+        notifyDataSetChanged();
+    }
+
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Hero hero = mListHero.get(position);
         holder.mTextName.setText(hero.getName());
-        holder.mImageHero.setImageResource(hero.getImage());
+       // holder.mImageHero.setImageResource(hero.getImage());
+        holder.mImageHero.setImageBitmap(hero.getImage()); // set theo BITMAP
     }
 
     @Override

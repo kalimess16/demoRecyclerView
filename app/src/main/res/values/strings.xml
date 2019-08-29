@@ -1,8 +1,12 @@
 <resources>
-    <string name="app_name">DemoRecyclerView</string>
+    <string name="app_name">My Hero</string>
     <string name="recycler_view">Recycler View</string>
     <string name="card_view">Card View</string>
     <string name="exit">Exit</string>
     <string name="iron_man">Iron Man</string>
     <string name="theme">theme</string>
+    <string name="refresh">Refresh</string>
+    <string name="add">ADD</string>
+    <string name="add_info_hero">Add Info Hero</string>
+    <string name="close">Close</string>
 </resources>

@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView
+        android:padding="@dimen/dp_10"
         android:scaleType="fitXY"
         android:src="@drawable/ic_iron_man"
         android:id="@+id/image_recycler"
@@ -11,11 +12,12 @@
         android:layout_height="@dimen/dp_200"/>
 
     <TextView
+        android:padding="@dimen/dp_10"
         android:textSize="@dimen/sp_20"
         android:gravity="bottom|right"
         android:id="@+id/text_name"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_150"
+        android:layout_height="@dimen/dp_200"
         android:text="@string/iron_man"
         android:textColor="@color/colorWhite"
         tools:ignore="RtlHardcoded"
